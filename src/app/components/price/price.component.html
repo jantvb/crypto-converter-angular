@@ -1,0 +1,10 @@
+<div class="price-container">
+    <div *ngIf="!loading">
+        <label>{{cryptoConverter}} WUC </label> <label class="positive" *ngIf="valueUp">↑</label><label class="negative" *ngIf="!valueUp">↓</label> <label [class]="valueUp ? 'positive' : 'negative'"> {{diff}}</label>
+    </div>
+    <div *ngIf="loading">
+        <label>Loading...</label>
+    </div>
+</div>
+
+

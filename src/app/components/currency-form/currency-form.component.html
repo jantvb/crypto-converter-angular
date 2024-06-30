@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+    <input
+        type="number"
+        inputmode="decimal"
+        formControlName="amount">
+    <select formControlName="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="CNY">CNY</option>
+        <option value="JPY">JPY</option>
+    </select>
+</form>
+
+
